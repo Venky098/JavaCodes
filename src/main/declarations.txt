@@ -1,0 +1,124 @@
+Here’s a **structured cheat sheet** of the most common Java data structures, their declarations, and basic methods/usage 👇  
+
+---
+
+## 📦 Arrays
+```java
+int[] arr = new int[5];          // declaration with size
+int[] arr2 = {1, 2, 3, 4, 5};    // declaration + initialization
+```
+- Access: `arr[0]`
+- Modify: `arr[2] = 10;`
+- Length: `arr.length`
+
+---
+
+## 📋 Lists
+### ArrayList
+```java
+List<String> list = new ArrayList<>();
+```
+- `list.add("A");`
+- `list.get(0);`
+- `list.remove(0);`
+- `list.size();`
+- `list.contains("A");`
+
+### LinkedList
+```java
+List<Integer> linked = new LinkedList<>();
+```
+- Same methods as `ArrayList`
+- Better for frequent insertions/deletions
+
+---
+
+## 🗂️ Sets
+### HashSet
+```java
+Set<Integer> set = new HashSet<>();
+```
+- `set.add(10);`
+- `set.remove(10);`
+- `set.contains(10);`
+- `set.size();`
+
+### TreeSet (sorted)
+```java
+Set<String> sortedSet = new TreeSet<>();
+```
+
+---
+
+## 🔑 Maps
+### HashMap
+```java
+Map<Integer, String> map = new HashMap<>();
+```
+- `map.put(1, "One");`
+- `map.get(1);`
+- `map.remove(1);`
+- `map.containsKey(1);`
+- `map.size();`
+
+### TreeMap (sorted keys)
+```java
+Map<Integer, String> sortedMap = new TreeMap<>();
+```
+
+---
+
+## 📚 Stack
+```java
+Stack<Integer> stack = new Stack<>();
+```
+- `stack.push(10);`
+- `stack.pop();`
+- `stack.peek();`
+- `stack.isEmpty();`
+
+---
+
+## 📬 Queue
+### LinkedList as Queue
+```java
+Queue<String> queue = new LinkedList<>();
+```
+- `queue.add("A");`
+- `queue.remove();`   // removes head
+- `queue.peek();`     // view head
+- `queue.isEmpty();`
+
+### PriorityQueue
+```java
+Queue<Integer> pq = new PriorityQueue<>();
+```
+- Stores elements in natural order (min-heap by default)
+
+### ArrayDeque (double-ended queue)
+```java
+Deque<Integer> deque = new ArrayDeque<>();
+```
+- `deque.addFirst(1);`
+- `deque.addLast(2);`
+- `deque.removeFirst();`
+- `deque.removeLast();`
+
+---
+
+## ⚡ Quick Comparison
+
+| **Array** | Fixed size, fast access |
+| **ArrayList** | Dynamic size, fast random access |
+| **LinkedList** | Fast insert/delete, slower access |
+| **HashSet** | Unique elements, no order |
+| **TreeSet** | Unique elements, sorted |
+| **HashMap** | Key-value pairs, fast lookup |
+| **TreeMap** | Key-value pairs, sorted keys |
+| **Stack** | LIFO operations |
+| **Queue** | FIFO operations |
+| **Deque** | Double-ended queue |
+
+---
+
+👉 Do you want me to also prepare a **ready-to-use Java file** that demonstrates all these structures with example code (like a mini reference program)? That way you can run it directly and see outputs.
